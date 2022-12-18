@@ -7,5 +7,8 @@ public class Main {
 
         SortingApproach sortingApproach = new SortingApproach();
         sortingApproach.findPair(new int[]{8, 7, 2, 5, 3, 1},10);
+
+        HashingApproach hashingApproach = new HashingApproach();
+        hashingApproach.findPair(new int[]{8, 7, 2, 5, 3, 1},10);
     }
 }

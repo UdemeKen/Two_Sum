@@ -1,4 +1,14 @@
 1. USING BRUT-FORCE
     ===================
     A naive solution is to consider every pair in the given array and return if the desired sum is found.
+
     The time of the above solution is 0(n^2) and doesn't require any extra space, where n is the size of the input.
+
+2. USING SORTING
+    ===============
+    The idea is to sort the given array n ascending order and maintain search space by maintaining two indices (low and high)
+    that initially point to two endpoints of the array. Then reduce the search space nums [low...high] at each iteration of the loop
+    by comparing the sum of elements present at indices low and high with the desired sum. Increment low if the sum is less
+    than the expected sum; otherwise, decrement high if the sum is more than the desired sum. If the pair is found return it.
+
+    The time complexity of the above solution is 0(n.log(n)) and doesn't require any extra space.
